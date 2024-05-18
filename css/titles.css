@@ -1,0 +1,101 @@
+.manga-draft-container[data-v-a4bd3ffb] {
+    align-items: center;
+    background-color: var(--md-accent);
+    border-radius: .25rem;
+    -moz-column-gap: .5rem;
+    column-gap: .5rem;
+    display: grid;
+    grid-template-areas: "preview title title title options" "none status status date date";
+    grid-template-columns: min-content minmax(0,1fr) 84px minmax(min-content,100px) min-content;
+    padding: .25rem .5rem
+}
+
+@media (min-width: 40rem) {
+    .manga-draft-container[data-v-a4bd3ffb] {
+        grid-template-areas:"preview title status date options"
+    }
+}
+
+@media (min-width: 48rem) {
+    .manga-draft-container[data-v-a4bd3ffb] {
+        grid-template-columns:min-content minmax(0,1fr) 84px minmax(min-content,180px) min-content
+    }
+}
+
+.context-menu[data-v-a4bd3ffb] {
+    margin-bottom: -.25rem;
+    margin-right: -.25rem;
+    margin-top: -.25rem;
+    padding: .25rem
+}
+
+.context-button[data-v-a4bd3ffb],.context-menu[data-v-a4bd3ffb] {
+    font-size: .75rem;
+    line-height: 1rem;
+    min-height: 0!important;
+    min-width: 0!important
+}
+
+.context-button[data-v-a4bd3ffb] {
+    padding: .25rem!important
+}
+
+.context-menu-placeholder[data-v-281efb0f] {
+    margin-bottom: -.25rem;
+    margin-right: -.25rem;
+    margin-top: -.25rem;
+    visibility: hidden
+}
+
+.context-button-placeholder[data-v-281efb0f],.context-menu-placeholder[data-v-281efb0f] {
+    font-size: .75rem;
+    line-height: 1rem;
+    min-height: 0!important;
+    min-width: 0!important;
+    padding: .25rem
+}
+
+.new-button[data-v-281efb0f] {
+    border: 1px dashed;
+    border-color: currentColor;
+    border-radius: .25rem;
+    height: 100%;
+    left: 0;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.sorting-option[data-v-281efb0f] {
+    align-items: center;
+    background-color: var(--md-accent-10);
+    border-color: var(--md-accent);
+    border-radius: .25rem;
+    border-width: 1px;
+    cursor: pointer;
+    display: flex;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.sorting-option:hover>.rotating-arrow[data-v-281efb0f] {
+    opacity: 1
+}
+
+.rotating-arrow[data-v-281efb0f] {
+    cursor: pointer;
+    opacity: .3;
+    transition: transform .15s ease-in-out
+}
+
+.rotating-arrow.visible[data-v-281efb0f] {
+    opacity: 1
+}
+
+.rotate-180[data-v-281efb0f] {
+    transform: rotate(180deg)
+}

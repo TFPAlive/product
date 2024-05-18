@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<head>
+    <title>Product Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/author.css">
+    <link rel="stylesheet" href="css/authors.css">
+    <link rel="stylesheet" href="css/chapter.css">
+    <link rel="stylesheet" href="css/create.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/entry.css">
+    <link rel="stylesheet" href="css/group.css">
+    <link rel="stylesheet" href="css/groups.css">
+    <link rel="stylesheet" href="css/misc.css">
+    <link rel="stylesheet" href="css/my.css">
+    <link rel="stylesheet" href="css/slug.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/titles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="header flex center">
+            <h1 class="title">LUMEN & CO.</h1>
+            <form class="search flex center">
+                <details class="custom-select">
+                    <summary class="radios">
+                      <input type="radio" name="item" id="item1" title="All" checked>
+                      <input type="radio" name="item" id="item2" title="Rings">
+                      <input type="radio" name="item" id="item3" title="Bracelet">
+                      <input type="radio" name="item" id="item4" title="Necklace">
+                    </summary>
+                    <ul class="list">
+                      <li>
+                        <label for="item1">All</label>
+                      </li>
+                      <li>
+                        <label for="item2">Rings</label>
+                      </li>
+                      <li>
+                        <label for="item3">Bracelet</label>
+                      </li>
+                      <li>
+                        <label for="item4">Necklace</label>
+                      </li>
+                    </ul>
+                </details>
+                <input class="searchbar" type="search" placeholder="Search...">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </span>
+            </form>
+            <button class="cart flex center">
+                <i class="fa fa-shopping-cart"></i>
+                <div class="pl10 text">View Cart</div>
+            </button>
+        </div>
+    </header>
+    <div class="main">
+        <div class="flex flex-grow">
+            <div data-v-01bc3dab class="flex flex-col h-screen md:h-full z-[7] lg:z-auto">
+                <div id="navbar" data-v-01bc3dab class="drawer" style="margin-left: calc(-1 * var(--drawer-menu-width)); transition: margin-left 150ms ease-in-out 0s;">
+                    <div data-v-01bc3dab class="lg:top-0 lg:sticky flex flex-col overflow-y-auto overscroll-contain h-screen">
+                        <div data-v-01bc3dab class="mx-4 py-2 flex-shrink-0 flex items-center">
+                            <i class="fa fa-filter"></i>
+                            <h1 class="font-header font-semibold pl10">Filters</h1>
+                        </div>
+                        <div data-v-01bc3dab id="section-Home" class="px-4 pt-2 flex flex-col flex-shrink-0">
+                            <div data-v-69037ae7 class="list__item px-2 !font-bold menu__item--hover-highlight justify-between">
+                                <div data-v-69037ae7 class="mx-2">Applied Filters</div>
+                                <div class="clear"><u>Clear all</u></div>
+                            </div>
+                        </div>
+                        <div data-v-01bc3dab id="section-Follows" class="px-4 pt-2 flex flex-col flex-shrink-0">
+                            <div data-v-abcd45c8 data-v-01bc3dab class="list__item">
+                                <div data-v-abcd45c8 class="mx-2 font-bold">Category</div>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <input type="checkbox" id="format_1" name="format_1" value="format_1">
+                                <label for="format_1">All</label>
+                                <input type="checkbox" id="format_2" name="format_2" value="format_2">
+                                <label for="format_2">Rings</label>
+                                <input type="checkbox" id="format_3" name="format_3" value="format_3">
+                                <label for="format_3">Bracelet</label>
+                                <input type="checkbox" id="format_4" name="format_4" value="format_4">
+                                <label for="format_4">Necklace</label>
+                            </div>
+                        </div>
+                        <div data-v-01bc3dab id="section-Titles" class="px-4 pt-2 flex flex-col flex-shrink-0">
+                            <div data-v-abcd45c8 data-v-01bc3dab class="list__item">
+                                <div data-v-abcd45c8 class="mx-2 font-bold">Stock Status</div>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <input type="checkbox" id="format_5" name="format_5" value="format_5">
+                                <label for="format_5">In Stock</label>
+                                <input type="checkbox" id="format_6" name="format_6" value="format_6">
+                                <label for="format_6">Out of Stock</label>
+                            </div>
+                        </div>
+                        <div data-v-01bc3dab class="flex-grow"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col flex-grow align-center" style="min-width: 0px;"> 
+                <div class="md-content flex-grow">
+                    <div data-v-0d2da047="" class="page-container wide">
+                        <div class="flex my-4 items-center">
+                            <div class="text-lg">Home/Search/Rings</div>
+                        </div>
+                        <div data-v-0d2da047="" class="flex items-center mb-6 mt-2">
+                            <h2 data-v-0d2da047="" class="font-header text-2xl font-semibold">
+                                "Gold Rings"
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="follows__content">
+                        <div class="grid gap-2 manga-card-cover-only grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-1">
+                            <div class="product-card">
+                                <img class="product-image" src="img\UI_Card_Icon_100431.png" alt="Product Image">
+                                <div data-v-69037ae7 class="product-name"><b>千夏パワー</b></div>
+                                <div data-v-69037ae7 class="product-type"><i>日向 千夏</i></div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <div class="rating">
+                                        <i class="fa fa-star yellow"></i>
+                                        5.0 (10 Reviwes)
+                                    </div>
+                                    <div class="condition in-stock">In Stock</div>
+                                </div>
+                                <div data-v-69037ae7 class="price">
+                                    <b>$200</b>
+                                </div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <button onclick="alert('Added')" class="add flex justify-between items-center">
+                                        <svg data-v-4c681a64 data-v-abcd45c8 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-plus icon" viewBox="0 0 24 24" style="color: currentcolor;">
+                                            <path d="M12 5v14m-7-7h14"></path>
+                                        </svg>
+                                        <h2 class="pl10"></h2>Add to cart
+                                    </button>
+                                    <button onclick="alert('Favorited')" class="favorite flex justify-between items-center">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-image" src="img\UI_Card_Icon_100611.png" alt="Product Image">
+                                <div data-v-69037ae7 class="product-name"><b>千夏パワー</b></div>
+                                <div data-v-69037ae7 class="product-type"><i>日向 千夏</i></div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <div class="rating">
+                                        <i class="fa fa-star yellow"></i>
+                                        5.0 (10 Reviwes)
+                                    </div>
+                                    <div class="condition in-stock">In Stock</div>
+                                </div>
+                                <div data-v-69037ae7 class="price">
+                                    <b>$200</b>
+                                </div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <button onclick="alert('Added')" class="add flex justify-between items-center">
+                                        <svg data-v-4c681a64 data-v-abcd45c8 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-plus icon" viewBox="0 0 24 24" style="color: currentcolor;">
+                                            <path d="M12 5v14m-7-7h14"></path>
+                                        </svg>
+                                        <h2 class="pl10"></h2>Add to cart
+                                    </button>
+                                    <button onclick="alert('Favorited')" class="favorite flex justify-between items-center">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-image" src="img\UI_Card_Icon_100612.png" alt="Product Image">
+                                <div data-v-69037ae7 class="product-name"><b>千夏パワー</b></div>
+                                <div data-v-69037ae7 class="product-type"><i>日向 千夏</i></div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <div class="rating">
+                                        <i class="fa fa-star yellow"></i>
+                                        5.0 (10 Reviwes)
+                                    </div>
+                                    <div class="condition in-stock">In Stock</div>
+                                </div>
+                                <div data-v-69037ae7 class="price">
+                                    <b>$200</b>
+                                </div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <button onclick="alert('Added')" class="add flex justify-between items-center">
+                                        <svg data-v-4c681a64 data-v-abcd45c8 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-plus icon" viewBox="0 0 24 24" style="color: currentcolor;">
+                                            <path d="M12 5v14m-7-7h14"></path>
+                                        </svg>
+                                        <h2 class="pl10"></h2>Add to cart
+                                    </button>
+                                    <button onclick="alert('Favorited')" class="favorite flex justify-between items-center">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-image" src="img\UI_Card_Icon_100744.png" alt="Product Image">
+                                <div data-v-69037ae7 class="product-name"><b>千夏パワー</b></div>
+                                <div data-v-69037ae7 class="product-type"><i>日向 千夏</i></div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <div class="rating">
+                                        <i class="fa fa-star yellow"></i>
+                                        5.0 (10 Reviwes)
+                                    </div>
+                                    <div class="condition in-stock">In Stock</div>
+                                </div>
+                                <div data-v-69037ae7 class="price">
+                                    <b>$200</b>
+                                </div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <button onclick="alert('Added')" class="add flex justify-between items-center">
+                                        <svg data-v-4c681a64 data-v-abcd45c8 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-plus icon" viewBox="0 0 24 24" style="color: currentcolor;">
+                                            <path d="M12 5v14m-7-7h14"></path>
+                                        </svg>
+                                        <h2 class="pl10"></h2>Add to cart
+                                    </button>
+                                    <button onclick="alert('Favorited')" class="favorite flex justify-between items-center">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-image" src="img\UI_Card_Icon_100980.png" alt="Product Image">
+                                <div data-v-69037ae7 class="product-name"><b>千夏パワー</b></div>
+                                <div data-v-69037ae7 class="product-type"><i>日向 千夏</i></div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <div class="rating">
+                                        <i class="fa fa-star yellow"></i>
+                                        5.0 (10 Reviwes)
+                                    </div>
+                                    <div class="condition in-stock">In Stock</div>
+                                </div>
+                                <div data-v-69037ae7 class="price">
+                                    <b>$200</b>
+                                </div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <button onclick="alert('Added')" class="add flex justify-between items-center">
+                                        <svg data-v-4c681a64 data-v-abcd45c8 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-plus icon" viewBox="0 0 24 24" style="color: currentcolor;">
+                                            <path d="M12 5v14m-7-7h14"></path>
+                                        </svg>
+                                        <h2 class="pl10"></h2>Add to cart
+                                    </button>
+                                    <button onclick="alert('Favorited')" class="favorite flex justify-between items-center">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-image" src="img\UI_Card_Icon_101302.png" alt="Product Image">
+                                <div data-v-69037ae7 class="product-name"><b>千夏パワー</b></div>
+                                <div data-v-69037ae7 class="product-type"><i>日向 千夏</i></div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <div class="rating">
+                                        <i class="fa fa-star yellow"></i>
+                                        5.0 (10 Reviwes)
+                                    </div>
+                                    <div class="condition in-stock">In Stock</div>
+                                </div>
+                                <div data-v-69037ae7 class="price">
+                                    <b>$200</b>
+                                </div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <button onclick="alert('Added')" class="add flex justify-between items-center">
+                                        <svg data-v-4c681a64 data-v-abcd45c8 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-plus icon" viewBox="0 0 24 24" style="color: currentcolor;">
+                                            <path d="M12 5v14m-7-7h14"></path>
+                                        </svg>
+                                        <h2 class="pl10"></h2>Add to cart
+                                    </button>
+                                    <button onclick="alert('Favorited')" class="favorite flex justify-between items-center">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-image" src="img\UI_Card_Icon_101306.png" alt="Product Image">
+                                <div data-v-69037ae7 class="product-name"><b>千夏パワー</b></div>
+                                <div data-v-69037ae7 class="product-type"><i>日向 千夏</i></div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <div class="rating">
+                                        <i class="fa fa-star yellow"></i>
+                                        5.0 (10 Reviwes)
+                                    </div>
+                                    <div class="condition in-stock">In Stock</div>
+                                </div>
+                                <div data-v-69037ae7 class="price">
+                                    <b>$200</b>
+                                </div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <button onclick="alert('Added')" class="add flex justify-between items-center">
+                                        <svg data-v-4c681a64 data-v-abcd45c8 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-plus icon" viewBox="0 0 24 24" style="color: currentcolor;">
+                                            <path d="M12 5v14m-7-7h14"></path>
+                                        </svg>
+                                        <h2 class="pl10"></h2>Add to cart
+                                    </button>
+                                    <button onclick="alert('Favorited')" class="favorite flex justify-between items-center">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-image" src="img\UI_Card_Icon_101312.png" alt="Product Image">
+                                <div data-v-69037ae7 class="product-name"><b>千夏パワー</b></div>
+                                <div data-v-69037ae7 class="product-type"><i>日向 千夏</i></div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <div class="rating">
+                                        <i class="fa fa-star yellow"></i>
+                                        5.0 (10 Reviwes)
+                                    </div>
+                                    <div class="condition in-stock">In Stock</div>
+                                </div>
+                                <div data-v-69037ae7 class="price">
+                                    <b>$200</b>
+                                </div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <button onclick="alert('Added')" class="add flex justify-between items-center">
+                                        <svg data-v-4c681a64 data-v-abcd45c8 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-plus icon" viewBox="0 0 24 24" style="color: currentcolor;">
+                                            <path d="M12 5v14m-7-7h14"></path>
+                                        </svg>
+                                        <h2 class="pl10"></h2>Add to cart
+                                    </button>
+                                    <button onclick="alert('Favorited')" class="favorite flex justify-between items-center">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-image" src="img\UI_Card_Icon_101336.png" alt="Product Image">
+                                <div data-v-69037ae7 class="product-name"><b>千夏パワー</b></div>
+                                <div data-v-69037ae7 class="product-type"><i>日向 千夏</i></div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <div class="rating">
+                                        <i class="fa fa-star yellow"></i>
+                                        5.0 (10 Reviwes)
+                                    </div>
+                                    <div class="condition in-stock">In Stock</div>
+                                </div>
+                                <div data-v-69037ae7 class="price">
+                                    <b>$200</b>
+                                </div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <button onclick="alert('Added')" class="add flex justify-between items-center">
+                                        <svg data-v-4c681a64 data-v-abcd45c8 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-plus icon" viewBox="0 0 24 24" style="color: currentcolor;">
+                                            <path d="M12 5v14m-7-7h14"></path>
+                                        </svg>
+                                        <h2 class="pl10"></h2>Add to cart
+                                    </button>
+                                    <button onclick="alert('Favorited')" class="favorite flex justify-between items-center">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-image" src="img\UI_Card_Icon_101342.png" alt="Product Image">
+                                <div data-v-69037ae7 class="product-name"><b>千夏パワー</b></div>
+                                <div data-v-69037ae7 class="product-type"><i>日向 千夏</i></div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <div class="rating">
+                                        <i class="fa fa-star yellow"></i>
+                                        5.0 (10 Reviwes)
+                                    </div>
+                                    <div class="condition in-stock">In Stock</div>
+                                </div>
+                                <div data-v-69037ae7 class="price">
+                                    <b>$200</b>
+                                </div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <button onclick="alert('Added')" class="add flex justify-between items-center">
+                                        <svg data-v-4c681a64 data-v-abcd45c8 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-plus icon" viewBox="0 0 24 24" style="color: currentcolor;">
+                                            <path d="M12 5v14m-7-7h14"></path>
+                                        </svg>
+                                        <h2 class="pl10"></h2>Add to cart
+                                    </button>
+                                    <button onclick="alert('Favorited')" class="favorite flex justify-between items-center">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-image" src="img\UI_Card_Icon_101576.png" alt="Product Image">
+                                <div data-v-69037ae7 class="product-name"><b>千夏パワー</b></div>
+                                <div data-v-69037ae7 class="product-type"><i>日向 千夏</i></div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <div class="rating">
+                                        <i class="fa fa-star yellow"></i>
+                                        5.0 (10 Reviwes)
+                                    </div>
+                                    <div class="condition in-stock">In Stock</div>
+                                </div>
+                                <div data-v-69037ae7 class="price">
+                                    <b>$200</b>
+                                </div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <button onclick="alert('Added')" class="add flex justify-between items-center">
+                                        <svg data-v-4c681a64 data-v-abcd45c8 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-plus icon" viewBox="0 0 24 24" style="color: currentcolor;">
+                                            <path d="M12 5v14m-7-7h14"></path>
+                                        </svg>
+                                        <h2 class="pl10"></h2>Add to cart
+                                    </button>
+                                    <button onclick="alert('Favorited')" class="favorite flex justify-between items-center">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-image" src="img\UI_Card_Icon_101593.png" alt="Product Image">
+                                <div data-v-69037ae7 class="product-name"><b>千夏パワー</b></div>
+                                <div data-v-69037ae7 class="product-type"><i>日向 千夏</i></div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <div class="rating">
+                                        <i class="fa fa-star yellow"></i>
+                                        5.0 (10 Reviwes)
+                                    </div>
+                                    <div class="condition in-stock">In Stock</div>
+                                </div>
+                                <div data-v-69037ae7 class="price">
+                                    <b>$200</b>
+                                </div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <button onclick="alert('Added')" class="add flex justify-between items-center">
+                                        <svg data-v-4c681a64 data-v-abcd45c8 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-plus icon" viewBox="0 0 24 24" style="color: currentcolor;">
+                                            <path d="M12 5v14m-7-7h14"></path>
+                                        </svg>
+                                        <h2 class="pl10"></h2>Add to cart
+                                    </button>
+                                    <button onclick="alert('Favorited')" class="favorite flex justify-between items-center">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-image" src="img\UI_Card_Icon_101866.png" alt="Product Image">
+                                <div data-v-69037ae7 class="product-name"><b>千夏パワー</b></div>
+                                <div data-v-69037ae7 class="product-type"><i>日向 千夏</i></div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <div class="rating">
+                                        <i class="fa fa-star yellow"></i>
+                                        5.0 (10 Reviwes)
+                                    </div>
+                                    <div class="condition in-stock">In Stock</div>
+                                </div>
+                                <div data-v-69037ae7 class="price">
+                                    <b>$200</b>
+                                </div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <button onclick="alert('Added')" class="add flex justify-between items-center">
+                                        <svg data-v-4c681a64 data-v-abcd45c8 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-plus icon" viewBox="0 0 24 24" style="color: currentcolor;">
+                                            <path d="M12 5v14m-7-7h14"></path>
+                                        </svg>
+                                        <h2 class="pl10"></h2>Add to cart
+                                    </button>
+                                    <button onclick="alert('Favorited')" class="favorite flex justify-between items-center">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-image" src="img\UI_Card_Icon_101883.png" alt="Product Image">
+                                <div data-v-69037ae7 class="product-name"><b>千夏パワー</b></div>
+                                <div data-v-69037ae7 class="product-type"><i>日向 千夏</i></div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <div class="rating">
+                                        <i class="fa fa-star yellow"></i>
+                                        5.0 (10 Reviwes)
+                                    </div>
+                                    <div class="condition in-stock">In Stock</div>
+                                </div>
+                                <div data-v-69037ae7 class="price">
+                                    <b>$200</b>
+                                </div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <button onclick="alert('Added')" class="add flex justify-between items-center">
+                                        <svg data-v-4c681a64 data-v-abcd45c8 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-plus icon" viewBox="0 0 24 24" style="color: currentcolor;">
+                                            <path d="M12 5v14m-7-7h14"></path>
+                                        </svg>
+                                        <h2 class="pl10"></h2>Add to cart
+                                    </button>
+                                    <button onclick="alert('Favorited')" class="favorite flex justify-between items-center">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-image" src="img\UI_Card_Icon_101988.png" alt="Product Image">
+                                <div data-v-69037ae7 class="product-name"><b>千夏パワー</b></div>
+                                <div data-v-69037ae7 class="product-type"><i>日向 千夏</i></div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <div class="rating">
+                                        <i class="fa fa-star yellow"></i>
+                                        5.0 (10 Reviwes)
+                                    </div>
+                                    <div class="condition in-stock">In Stock</div>
+                                </div>
+                                <div data-v-69037ae7 class="price">
+                                    <b>$200</b>
+                                </div>
+                                <div data-v-69037ae7 class="list__item justify-between">
+                                    <button onclick="alert('Added')" class="add flex justify-between items-center">
+                                        <svg data-v-4c681a64 data-v-abcd45c8 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-plus icon" viewBox="0 0 24 24" style="color: currentcolor;">
+                                            <path d="M12 5v14m-7-7h14"></path>
+                                        </svg>
+                                        <h2 class="pl10"></h2>Add to cart
+                                    </button>
+                                    <button onclick="alert('Favorited')" class="favorite flex justify-between items-center">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="next flex align-center">
+                    Next Page
+                    <div class="pl10 align-center flex">
+                        <svg data-v-4c681a64 data-v-fb154981 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-arrow-right icon" viewBox="0 0 24 24" style="color: currentcolor;">
+                            <path d="M5 12h14m-7-7 7 7-7 7"></path>
+                        </svg>
+                    </div> 
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="sub grid">
+            <div class="subscribe">
+                <div class="notif">
+                    Subcribe to Our Newsletter
+                </div>
+                <div class="descriptions">
+                    Don't miss out on your discounts. Subscribe to our email newsletter to get the best offers, discounts, coupons, gifts and much more.
+                </div>
+            </div>
+            <div class="fill-email flex align-center">
+                <form class="flex align-center">
+                    <input class="email-input" type="email" name="email" id="email" placeholder="Enter your email">
+                    <button class="sub-button" type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+        <div class="more grid">
+            <div class="information">
+                <div class="head center-text">
+                    Our Information
+                </div>
+                D1, HCMC,VN. <br>69 Nguyen Thi Minh Khai <br>0123456789
+            </div>
+            <div class="about">
+                <div class="head center-text">
+                    About Us
+                </div>
+                Support Center <br>Customer Support <br>About Us <br>Copyright
+            </div>
+            <div class="products">
+                <div class="head center-text">
+                    Product
+                </div>
+                Bracelet <br>Rings <br>Earings <br>Accessories
+            </div>
+            <div class="social">
+                <div class="head center-text">
+                    Social
+                </div>
+                <div class="center-text">
+                    <a href="#" style="font-size: 30px; padding: 0 15px;" class="fa fa-facebook"></a>
+                    <a href="#" style="font-size: 30px; padding: 0 15px;" class="fa fa-twitter"></a>
+                    <a href="#" style="font-size: 30px; padding: 0 15px;" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright center-text">
+            Lumen & Co. All rights served 
+        </div>
+    </footer>
+</body>

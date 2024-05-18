@@ -1,0 +1,119 @@
+.preview-grid[data-v-8fea223b] {
+    display: grid;
+    gap: .5rem;
+    grid-template-areas: "cover title" "options options";
+    grid-template-columns: minmax(0,72px) auto
+}
+
+@media (min-width: 40rem) {
+    .preview-grid[data-v-8fea223b] {
+        gap:1rem;
+        grid-template-areas: "cover options" "cover options";
+        grid-template-columns: minmax(0,250px) auto;
+        grid-template-rows: min-content auto
+    }
+}
+
+.alt-title[data-v-88ecfde6]:not(:last-child) {
+    border-bottom: 2px solid var(--md-accent)
+}
+
+.alt-title>span[data-v-88ecfde6] {
+    word-break: break-word
+}
+
+.flyout[data-v-9950c583] {
+    background-color: var(--md-background);
+    border-radius: .125rem;
+    box-shadow: 0 1px 12px #000a;
+    padding: .5rem;
+    position: fixed;
+    transform: translate(-50%);
+    z-index: 100
+}
+
+.flyout[data-v-9950c583]:hover {
+    display: block!important
+}
+
+@media (min-width: 40rem) {
+    .flyout[data-v-9950c583] {
+        transform:none
+    }
+}
+
+td[data-v-9950c583] {
+    vertical-align: middle
+}
+
+td[data-v-9950c583]:not(:last-child) {
+    padding-right: .5rem
+}
+
+.bar[data-v-9950c583] {
+    background-color: var(--md-accent);
+    border-radius: .25rem;
+    display: block;
+    height: .5rem;
+    position: relative;
+    width: 12rem
+}
+
+.bar[data-v-9950c583]:after {
+    background: #0f0;
+    background-color: var(--md-primary);
+    border-radius: inherit;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: var(--width)
+}
+
+.private[data-v-edb725c5] {
+    align-items: center;
+    border: 1px solid;
+    border-radius: 4px;
+    display: inline-flex;
+    font-size: x-small;
+    font-weight: 700;
+    line-height: 15px;
+    padding: 2px 4px
+}
+
+.volume-head[data-v-8fc38a82] {
+    cursor: pointer
+}
+
+.simple-tag[data-v-b8502010] {
+    background: var(--md-accent);
+    border-radius: 4px;
+    padding: 4px 8px;
+    white-space: nowrap
+}
+
+.rate[data-v-b8502010] {
+    display: block
+}
+
+@media only screen and (max-width: 374px) {
+    .rate[data-v-b8502010] {
+        display:none
+    }
+}
+
+.critical-warning[data-v-2a13bc6a] {
+    background-color: #fff;
+    border-color: var(--md-danger);
+    border-radius: 3px;
+    border-width: 1px;
+    color: var(--md-danger);
+    font-weight: 700;
+    padding: 10px
+}
+
+.rules-link[data-v-2a13bc6a] {
+    font-weight: 700
+}
