@@ -372,6 +372,7 @@ button.favorite {
     --carousel-width: 400px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    overflow-y: hidden;
     width: var(--carousel-width);
 }
   
@@ -459,4 +460,8 @@ button.favorite {
     .details {
         margin: 0 20px;
     }
+}
+
+img {
+    pointer-events: none;
 }
