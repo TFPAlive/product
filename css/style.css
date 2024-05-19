@@ -465,3 +465,11 @@ button.favorite {
 img {
     pointer-events: none;
 }
+.sort {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #a3a3a3;
+}
+.custom-sort {
+    min-width: 200px;
+}

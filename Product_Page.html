@@ -105,16 +105,54 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col flex-grow align-center" style="min-width: 0px;"> 
+            <div class="flex flex-col flex-grow align-center" style="min-width: 0px; margin: 0 25px;"> 
                 <div class="md-content flex-grow">
                     <div data-v-0d2da047="" class="page-container wide">
                         <div class="flex my-4 items-center">
                             <div class="text-lg">Home/Search/Rings</div>
                         </div>
-                        <div data-v-0d2da047="" class="flex items-center mb-6 mt-2">
+                        <div data-v-0d2da047="" class="flex items-center mb-6 mt-2 justify-between">
                             <h2 data-v-0d2da047="" class="font-header text-2xl font-semibold">
                                 "Gold Rings"
                             </h2>
+                            <div data-v-b649bad7 data-v-1f96d34d class="md-select focus:outline-none md-select--populated sm:w-auto w-full" tabindex="0">
+                                <div data-v-b649bad7 data-v-c8aa74a1 class="md-select focus:outline-none" tabindex="0">
+                                    <div onclick="activate()" class="custom-select custom-sort">
+                                        <button class="select-button" role="combobox" aria-labelledby="select button" aria-haspopup="listbox" aria-expanded="false" aria-controls="select-dropdown" >
+                                            Sort By: <span class="selected-value">Default</span>
+                                            <svg id="arrow" data-v-4c681a64 data-v-b649bad7 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-chevron-down icon text-icon-contrast text-undefined chevron ml-1 flex-shrink-0 my-4" viewBox="0 0 24 24">
+                                                <path d="m6 9 6 6 6-6"></path>
+                                            </svg>
+                                        </button>
+                                        <ul class="select-dropdown" role="listbox" id="select-dropdown" style="z-index: 100;">
+                                            <li role="option">
+                                                <input type="radio" id="Best" name="Status" />
+                                                <label for="Best"><i class="bx bxl-Ongoing"></i>Best Match</label>
+                                            </li>
+                                            <li role="option">
+                                                <input type="radio" id="Latest" name="Status" />
+                                                <label for="Latest"><i class="bx bxl-Completed"></i>Relevance</label>
+                                            </li>
+                                            <li role="option">
+                                                <input type="radio" id="Recent" name="Status" />
+                                                <label for="Recent"><i class="bx bxl-Completed"></i>Recently Added</label>
+                                            </li>
+                                            <li role="option">
+                                                <input type="radio" id="Highest" name="Status" />
+                                                <label for="Highest"><i class="bx bxl-Completed"></i>Highest rating</label>
+                                            </li>
+                                            <li role="option">
+                                                <input type="radio" id="Ascend" name="Status" />
+                                                <label for="Ascend"><i class="bx bxl-Completed"></i>Name Ascending</label>
+                                            </li>
+                                            <li role="option">
+                                                <input type="radio" id="Descend" name="Status" />
+                                                <label for="Descend"><i class="bx bxl-Completed"></i>Name Descending</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="follows__content">
@@ -542,19 +580,19 @@
         </div>
         <div class="more grid">
             <div class="information">
-                <div class="head center-text">
+                <div class="head">
                     Our Information
                 </div>
                 D1, HCMC,VN. <br>69 Nguyen Thi Minh Khai <br>0123456789
             </div>
             <div class="about">
-                <div class="head center-text">
+                <div class="head">
                     About Us
                 </div>
                 Support Center <br>Customer Support <br>About Us <br>Copyright
             </div>
             <div class="products">
-                <div class="head center-text">
+                <div class="head">
                     Product
                 </div>
                 Bracelet <br>Rings <br>Earings <br>Accessories
@@ -574,4 +612,5 @@
             Lumen & Co. All rights served 
         </div>
     </footer>
+    <script src="js/main.js"></script>   
 </body>
