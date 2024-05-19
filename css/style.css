@@ -360,12 +360,6 @@ button.favorite {
     background-color: black;
     color: white;
 }
-@media (max-width: 800px) {
-    footer {
-        visibility: hidden;
-        height: 0;
-    }
-}
 
 .carousel {
     display: block;
@@ -436,6 +430,18 @@ button.favorite {
     margin-left: 10%;   
 }
 
+img {
+    pointer-events: none;
+}
+.sort {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #a3a3a3;
+}
+.custom-sort {
+    width: 250px;
+}
+
 @media (max-width: 800px) {
     .title {
         font-size: 16px;
@@ -460,16 +466,11 @@ button.favorite {
     .details {
         margin: 0 20px;
     }
-}
-
-img {
-    pointer-events: none;
-}
-.sort {
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: #a3a3a3;
-}
-.custom-sort {
-    width: 250px;
+    footer {
+        visibility: hidden;
+        height: 0;
+    }
+    .header {
+        justify-content: space-around;
+    }
 }
