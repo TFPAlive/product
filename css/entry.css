@@ -3937,3 +3937,7 @@ pre {
     padding: 0;
     overflow-x: hidden;
 }
+a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
